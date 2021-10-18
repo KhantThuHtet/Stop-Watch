@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --text-color: #707070;
+    --btn-color : #91D2D4;
+}
+
+.container{
+    height: 100vh;
+    padding-top: 130px;
+    background-image: url(./../img/stopwatch_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    color: var(--text-color);;
+}
+.display{
+    font-size: 90px;
+    position: relative;
+}
+.milisecond{
+    margin-top: -10px;
+    margin-left: 305px;
+}
+.control-btn{
+    margin-top: 30px;
+}
+.btn{
+    margin: 0 10px;
+    padding: 8px 0px;
+    width: 116px;
+    border-radius: 5px;
+    border: none;
+    color: #5C5578;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: var(--btn-color);
+    transition: 0.3s all;
+}
+.btn:hover{
+    background-color: #9ED9DB;
+}
